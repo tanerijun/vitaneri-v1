@@ -34,15 +34,6 @@ export const bouncySnow: ISourceOptions = {
       repulse: {
         factor: 2,
         maxSpeed: 2,
-        divs: {
-          distance: 200,
-          duration: 0.4,
-          factor: 2,
-          speed: 1,
-          maxSpeed: 2,
-          easing: 'ease-out-quad',
-          selectors: [],
-        },
       },
     },
   },
@@ -50,18 +41,12 @@ export const bouncySnow: ISourceOptions = {
     collisions: {
       bounce: {
         horizontal: {
-          random: {
-            enable: true,
-          },
           value: {
             min: 0.1,
             max: 1,
           },
         },
         vertical: {
-          random: {
-            enable: true,
-          },
           value: {
             min: 0.1,
             max: 1,
@@ -73,6 +58,7 @@ export const bouncySnow: ISourceOptions = {
     move: {
       angle: {
         value: 45,
+        offset: 0,
       },
       direction: 'bottom-left',
       drift: 0.01,
