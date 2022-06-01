@@ -1,7 +1,9 @@
 // Options to control particle effect
 // See particles.js.org for more options
 
-export const bouncySnow = {
+import { ISourceOptions } from 'tsparticles-engine'; // Interface for particleOptions
+
+export const bouncySnow: ISourceOptions = {
   // background: {
   //   color: {
   //     value: '#141214',
