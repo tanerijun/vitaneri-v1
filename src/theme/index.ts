@@ -1,5 +1,6 @@
 import {
   extendTheme,
+  theme as base,
   // withDefaultColorScheme,
   type ThemeConfig,
 } from '@chakra-ui/react';
@@ -12,6 +13,11 @@ const styles = {
       bg: mode('gray.100', '#141214')(props),
     },
   }),
+};
+
+const fonts = {
+  heading: `Montserrat, ${base.fonts.heading}`,
+  body: `Inter, ${base.fonts.body}`,
 };
 
 const config: ThemeConfig = {
@@ -29,6 +35,7 @@ const theme = extendTheme(
   {
     config,
     styles,
+    fonts,
     // colors,
   }
   // withDefaultColorScheme({ colorScheme: 'brand' })
