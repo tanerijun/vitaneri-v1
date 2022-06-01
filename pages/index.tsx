@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ParticlesBackground />
+      {/* <ParticlesBackground /> */}
 
       <Box height="100vh" width="100vw">
         <VStack

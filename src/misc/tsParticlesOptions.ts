@@ -92,7 +92,7 @@ export const bouncySnow: ISourceOptions = {
   },
 };
 
-export const colorShow: ISourceOptions = {
+export const colorShow: any = {
   particles: {
     number: {
       value: 80,
