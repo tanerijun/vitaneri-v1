@@ -4,6 +4,7 @@ import Image from 'next/image';
 import ParticlesBackground from '../src/components/ParticlesBackground';
 import {
   Box,
+  Divider,
   Heading,
   HStack,
   Icon,
@@ -32,16 +33,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <ParticlesBackground /> */}
+      <ParticlesBackground />
 
-      <Box height="100vh" width="100vw" bg="red.200">
+      <Box height="100vh" width="100vw">
         <VStack
           position="absolute"
           top="45%"
           left="10%"
           alignItems="flex-start"
-          spacing={8}
-          bg="blue.200"
+          spacing={4}
+          p={4}
+          borderRadius="lg"
+          divider={<Divider />}
+          bg="whiteAlpha.100"
         >
           <VStack alignItems="flex-start">
             <Heading size={{ base: '2xl', lg: '3xl', xl: '4xl' }}>
