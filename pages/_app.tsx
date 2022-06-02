@@ -1,5 +1,6 @@
-import '@fontsource/montserrat';
 import '@fontsource/inter';
+import '@fontsource/merriweather';
+import '@fontsource/source-sans-pro';
 
 import type { AppProps } from 'next/app';
 

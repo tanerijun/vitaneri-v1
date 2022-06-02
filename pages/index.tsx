@@ -48,8 +48,12 @@ const Home: NextPage = () => {
           bg="whiteAlpha.100"
         >
           <VStack alignItems="flex-start">
-            <Heading size="2xl">Vincent Taneri</Heading>
-            <Text fontSize="lg">Software Developer</Text>
+            <Heading size="2xl" fontWeight="light" fontFamily={'Merriweather'}>
+              Vincent Taneri
+            </Heading>
+            <Text fontSize="md" fontFamily={'Inter'}>
+              Software Developer
+            </Text>
           </VStack>
           <HStack spacing={4}>
             <Link href="#" target="_blank">

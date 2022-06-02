@@ -16,8 +16,8 @@ const styles = {
 };
 
 const fonts = {
-  heading: `Montserrat, ${base.fonts.heading}`,
-  body: `Inter, ${base.fonts.body}`,
+  heading: `Inter, ${base.fonts.heading}`,
+  body: `Source Sans Pro, ${base.fonts.body}`,
 };
 
 const config: ThemeConfig = {
