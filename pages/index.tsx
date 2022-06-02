@@ -52,8 +52,8 @@ const Home: NextPage = () => {
           <VStack alignItems="flex-start">
             <Heading
               size="2xl"
-              fontWeight="light"
               fontFamily="Merriweather"
+              fontWeight="light"
               letterSpacing="1px"
             >
               Vincent Taneri
