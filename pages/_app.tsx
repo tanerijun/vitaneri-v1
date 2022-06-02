@@ -17,12 +17,11 @@ const GlobalStyles = css`
     box-shadow: none;
   }
 
-  .redBg {
-    background-color: red;
-  }
-
   .glassmorphism {
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px) saturate(125%); // Support for webkit
+    backdrop-filter: blur(10px) saturate(125%);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
 `;
 

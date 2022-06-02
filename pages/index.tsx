@@ -46,6 +46,7 @@ const Home: NextPage = () => {
           borderRadius="lg"
           divider={<Divider />}
           bg="whiteAlpha.100"
+          boxShadow="md"
           className="glassmorphism"
         >
           <VStack alignItems="flex-start">
