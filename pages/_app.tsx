@@ -16,6 +16,14 @@ const GlobalStyles = css`
     outline: none;
     box-shadow: none;
   }
+
+  .redBg {
+    background-color: red;
+  }
+
+  .glassmorphism {
+    backdrop-filter: blur(5px);
+  }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {

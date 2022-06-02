@@ -6,14 +6,14 @@ import {
 } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
-const styles = {
-  global: (props: any) => ({
-    body: {
-      color: mode('gray.800', 'whiteAlpha.900')(props),
-      bg: mode('gray.100', '#141214')(props),
-    },
-  }),
-};
+// const styles = {
+//   global: (props: any) => ({
+//     body: {
+//       color: mode('gray.800', 'whiteAlpha.900')(props),
+//       bg: mode('gray.100', '#141214')(props),
+//     },
+//   }),
+// };
 
 const fonts = {
   heading: `Inter, ${base.fonts.heading}`,
@@ -34,7 +34,7 @@ const config: ThemeConfig = {
 const theme = extendTheme(
   {
     config,
-    styles,
+    // styles,
     fonts,
     // colors,
   }

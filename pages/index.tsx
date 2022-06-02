@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <ParticlesBackground /> */}
+      <ParticlesBackground />
 
       <Box height="100vh" width="100vw">
         <VStack
@@ -42,16 +42,22 @@ const Home: NextPage = () => {
           left="10%"
           alignItems="flex-start"
           spacing={4}
-          p={4}
+          p={8}
           borderRadius="lg"
           divider={<Divider />}
           bg="whiteAlpha.100"
+          className="glassmorphism"
         >
           <VStack alignItems="flex-start">
-            <Heading size="2xl" fontWeight="light" fontFamily={'Merriweather'}>
+            <Heading
+              size="2xl"
+              fontWeight="light"
+              fontFamily="Merriweather"
+              letterSpacing="1px"
+            >
               Vincent Taneri
             </Heading>
-            <Text fontSize="md" fontFamily={'Inter'}>
+            <Text fontSize="md" fontFamily="Inter" letterSpacing="0.5px">
               Software Developer
             </Text>
           </VStack>
@@ -59,43 +65,43 @@ const Home: NextPage = () => {
             <Link href="#" target="_blank">
               <Icon
                 as={RiGithubFill}
-                h={{ base: 5, md: 6, xl: 8 }}
-                w={{ base: 5, md: 6, xl: 8 }}
+                h={{ base: 5, lg: 6 }}
+                w={{ base: 5, lg: 6 }}
               />
             </Link>
             <Link href="#" target="_blank">
               <Icon
                 as={RiLinkedinBoxFill}
-                h={{ base: 5, md: 6, xl: 8 }}
-                w={{ base: 5, md: 6, xl: 8 }}
+                h={{ base: 5, lg: 6 }}
+                w={{ base: 5, lg: 6 }}
               />
             </Link>
             <Link href="#" target="_blank">
               <Icon
                 as={RiFacebookCircleFill}
-                h={{ base: 5, md: 6, xl: 8 }}
-                w={{ base: 5, md: 6, xl: 8 }}
+                h={{ base: 5, lg: 6 }}
+                w={{ base: 5, lg: 6 }}
               />
             </Link>
             <Link href="#" target="_blank">
               <Icon
                 as={RiTwitterFill}
-                h={{ base: 5, md: 6, xl: 8 }}
-                w={{ base: 5, md: 6, xl: 8 }}
+                h={{ base: 5, lg: 6 }}
+                w={{ base: 5, lg: 6 }}
               />
             </Link>
             <Link href="#" target="_blank">
               <Icon
                 as={RiMailFill}
-                h={{ base: 5, md: 6, xl: 8 }}
-                w={{ base: 5, md: 6, xl: 8 }}
+                h={{ base: 5, lg: 6 }}
+                w={{ base: 5, lg: 6 }}
               />
             </Link>
             <Link href="#" target="_blank">
               <Icon
                 as={RiMoreFill}
-                h={{ base: 5, md: 6, xl: 8 }}
-                w={{ base: 5, md: 6, xl: 8 }}
+                h={{ base: 5, lg: 6 }}
+                w={{ base: 5, lg: 6 }}
               />
             </Link>
           </HStack>
