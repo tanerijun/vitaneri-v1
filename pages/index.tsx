@@ -63,7 +63,13 @@ const Home: NextPage = () => {
             </Text>
           </VStack>
           <HStack spacing={4}>
-            <Link href="#" target="_blank">
+            <Link
+              href="#"
+              target="_blank"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
               <Icon
                 as={RiGithubFill}
                 h={{ base: 5, lg: 6 }}
