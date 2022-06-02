@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import ParticlesBackground from '../src/components/ParticlesBackground';
 import {
   Box,
   Divider,
@@ -20,6 +19,8 @@ import {
   RiMailFill,
   RiMoreFill,
 } from 'react-icons/ri';
+import ParticlesBackground from '../src/components/ParticlesBackground';
+import LinkIcon from '../src/components/LinkIcon';
 
 const Home: NextPage = () => {
   return (
@@ -63,54 +64,12 @@ const Home: NextPage = () => {
             </Text>
           </VStack>
           <HStack spacing={4}>
-            <Link
-              href="#"
-              target="_blank"
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Icon
-                as={RiGithubFill}
-                h={{ base: 5, lg: 6 }}
-                w={{ base: 5, lg: 6 }}
-              />
-            </Link>
-            <Link href="#" target="_blank">
-              <Icon
-                as={RiLinkedinBoxFill}
-                h={{ base: 5, lg: 6 }}
-                w={{ base: 5, lg: 6 }}
-              />
-            </Link>
-            <Link href="#" target="_blank">
-              <Icon
-                as={RiFacebookCircleFill}
-                h={{ base: 5, lg: 6 }}
-                w={{ base: 5, lg: 6 }}
-              />
-            </Link>
-            <Link href="#" target="_blank">
-              <Icon
-                as={RiTwitterFill}
-                h={{ base: 5, lg: 6 }}
-                w={{ base: 5, lg: 6 }}
-              />
-            </Link>
-            <Link href="#" target="_blank">
-              <Icon
-                as={RiMailFill}
-                h={{ base: 5, lg: 6 }}
-                w={{ base: 5, lg: 6 }}
-              />
-            </Link>
-            <Link href="#" target="_blank">
-              <Icon
-                as={RiMoreFill}
-                h={{ base: 5, lg: 6 }}
-                w={{ base: 5, lg: 6 }}
-              />
-            </Link>
+            <LinkIcon href="#" icon={RiGithubFill} />
+            <LinkIcon href="#" icon={RiLinkedinBoxFill} />
+            <LinkIcon href="#" icon={RiFacebookCircleFill} />
+            <LinkIcon href="#" icon={RiTwitterFill} />
+            <LinkIcon href="#" icon={RiMailFill} />
+            <LinkIcon href="#" icon={RiMoreFill} />
           </HStack>
         </VStack>
       </Box>
