@@ -7,6 +7,9 @@ interface LinkIconProp {
 }
 
 const LinkIcon = ({ href, icon }: LinkIconProp) => {
+  // TODO: If icon === RiMoreFill (have to import this),
+  // the icon should act as a button that open a modal/drawer to more info about me
+
   return (
     <Link
       href={href}
