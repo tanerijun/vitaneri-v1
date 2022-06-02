@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             <LinkIcon href="#" icon={RiLinkedinBoxFill} />
             <LinkIcon href="#" icon={RiFacebookCircleFill} />
             <LinkIcon href="#" icon={RiTwitterFill} />
-            <LinkIcon href="#" icon={RiMailFill} />
+            <LinkIcon href="mailto:tanerivince@gmail.com" icon={RiMailFill} />
             <LinkIcon href="#" icon={RiMoreFill} />
           </HStack>
         </VStack>
