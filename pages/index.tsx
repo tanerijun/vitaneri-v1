@@ -1,27 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import {
-  Box,
-  Center,
-  Divider,
-  Heading,
-  HStack,
-  Icon,
-  Link,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
-import {
-  RiGithubFill,
-  RiFacebookCircleFill,
-  RiTwitterFill,
-  RiLinkedinBoxFill,
-  RiMailFill,
-  RiMoreFill,
-} from 'react-icons/ri';
+import { Center, Divider, Heading, Text, VStack } from '@chakra-ui/react';
 import ParticlesBackground from '../src/components/ParticlesBackground';
-import LinkIcon from '../src/components/LinkIcon';
+import LinkIcons from '../src/components/LinkIcon';
 
 const Home: NextPage = () => {
   return (
@@ -63,30 +45,7 @@ const Home: NextPage = () => {
               Software Developer
             </Text>
           </VStack>
-          <HStack spacing={4}>
-            <LinkIcon
-              href="https://github.com/tanerijun"
-              icon={RiGithubFill}
-              name="Github"
-            />
-            <LinkIcon href="#" icon={RiLinkedinBoxFill} name="LinkedIn" />
-            <LinkIcon
-              href="https://www.facebook.com/VinceTaneri/"
-              icon={RiFacebookCircleFill}
-              name="Facebook"
-            />
-            <LinkIcon
-              href="https://twitter.com/tanerivince"
-              icon={RiTwitterFill}
-              name="Twitter"
-            />
-            <LinkIcon
-              href="mailto:tanerivince@gmail.com"
-              icon={RiMailFill}
-              name="Email"
-            />
-            <LinkIcon href="#" icon={RiMoreFill} name="About Me" />
-          </HStack>
+          <LinkIcons />
         </VStack>
       </Center>
     </>
