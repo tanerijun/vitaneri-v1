@@ -1,13 +1,13 @@
 import { Icon, Link } from '@chakra-ui/react';
 import { IconType } from 'react-icons/lib';
-import { RiBluetoothConnectFill } from 'react-icons/ri';
 
 interface LinkIconProp {
-  href: string;
+  href?: string;
   icon: IconType;
+  name: string;
 }
 
-const LinkIcon = ({ href, icon }: LinkIconProp) => {
+const LinkIcon = ({ href, icon, name }: LinkIconProp) => {
   // TODO: If icon === RiMailFill (have to import this),
   // the icon should act as a button that open a popover asking the user to contact me with mailto and a button to copy email
 

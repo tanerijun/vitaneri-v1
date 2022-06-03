@@ -64,12 +64,28 @@ const Home: NextPage = () => {
             </Text>
           </VStack>
           <HStack spacing={4}>
-            <LinkIcon href="#" icon={RiGithubFill} />
-            <LinkIcon href="#" icon={RiLinkedinBoxFill} />
-            <LinkIcon href="#" icon={RiFacebookCircleFill} />
-            <LinkIcon href="#" icon={RiTwitterFill} />
-            <LinkIcon href="mailto:tanerivince@gmail.com" icon={RiMailFill} />
-            <LinkIcon href="#" icon={RiMoreFill} />
+            <LinkIcon
+              href="https://github.com/tanerijun"
+              icon={RiGithubFill}
+              name="Github"
+            />
+            <LinkIcon href="#" icon={RiLinkedinBoxFill} name="LinkedIn" />
+            <LinkIcon
+              href="https://www.facebook.com/VinceTaneri/"
+              icon={RiFacebookCircleFill}
+              name="Facebook"
+            />
+            <LinkIcon
+              href="https://twitter.com/tanerivince"
+              icon={RiTwitterFill}
+              name="Twitter"
+            />
+            <LinkIcon
+              href="mailto:tanerivince@gmail.com"
+              icon={RiMailFill}
+              name="Email"
+            />
+            <LinkIcon href="#" icon={RiMoreFill} name="About Me" />
           </HStack>
         </VStack>
       </Box>
