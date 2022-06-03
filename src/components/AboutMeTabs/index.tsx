@@ -57,7 +57,7 @@ const AboutTab = () => {
           </Text>
         </Flex>
         <Text>
-          Hi, my name is Vincent. I'm currently a student at{' '}
+          Hi, my name is Vincent. I&apos;m currently a student at{' '}
           <Link href="https://www.lhu.edu.tw/" isExternal>
             LongHua University of Science and Technology
           </Link>
@@ -65,8 +65,8 @@ const AboutTab = () => {
         </Text>
         <Text>
           I started playing with computers when I was 15 years old. Since then,
-          I've been tinkering with all sorts of technologies, and it didn't take
-          long before I fell in love with coding.
+          I&apos;ve been tinkering with all sorts of technologies, and it
+          didn&apos;t take long before I fell in love with the world of coding.
         </Text>
         <Text>
           The knowledge from my Electronic Engineering class not only enhance my
@@ -75,10 +75,10 @@ const AboutTab = () => {
           to make software development my career.
         </Text>
         <Text>
-          Nowadays, I'm mostly focused on web development. I'm in love with the
-          fast-paced world of web development. It's constantly evolving and
-          changing. There's never a shortage of stuff to learn. And lifelong
-          learner is what I am.
+          Nowadays, I&apos;m mostly focused on web development. I&apos;m in love
+          with the fast-paced world of web development. It&apos;s constantly
+          evolving and changing. There&apos;s never a shortage of stuff to
+          learn. And lifelong learner is what I am.
         </Text>
       </VStack>
       <Box>
