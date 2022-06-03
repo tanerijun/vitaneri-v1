@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {
   Box,
   Link,
@@ -19,15 +18,28 @@ import {
   UnorderedList,
   ListItem,
   VStack,
+  Flex,
+  Center,
 } from '@chakra-ui/react';
+import OptimizedImage from '../OptimizedImage';
+import profilePic from '../../../public/portrait.jpg';
 
 const AboutTab = () => {
   return (
     <VStack alignItems="flex-start" spacing={8}>
-      <Box>
+      <VStack alignItems="flex-start" spacing={2}>
         <Heading as="h3" size="lg">
           Introduction
         </Heading>
+        <Box>
+          <OptimizedImage
+            src={profilePic}
+            alt="Picture of Vincent"
+            borderRadius="full"
+            width={200}
+            height={200}
+          />
+        </Box>
         <Text>
           Hi, my name is Vincent. I'm currently a student at{' '}
           <Link href="https://www.lhu.edu.tw/" isExternal>
@@ -46,7 +58,7 @@ const AboutTab = () => {
           me a newfound appreciation for the field. It gives me the final push
           to make software development my career.
         </Text>
-      </Box>
+      </VStack>
       <Box>
         <Heading as="h3" size="lg">
           Likes
