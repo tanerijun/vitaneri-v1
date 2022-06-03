@@ -222,8 +222,16 @@ const AboutMeTabs = () => {
         <TabPanel>
           <AboutTab />
         </TabPanel>
-        <TabPanel>Project</TabPanel>
-        <TabPanel>Blog</TabPanel>
+        <TabPanel>
+          <Flex alignItems="center" justifyContent="center">
+            Coming Soon
+          </Flex>
+        </TabPanel>
+        <TabPanel>
+          <Flex alignItems="center" justifyContent="center">
+            Coming Soon
+          </Flex>
+        </TabPanel>
       </TabPanels>
     </Tabs>
   );
