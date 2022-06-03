@@ -36,6 +36,7 @@ const AboutTab = () => {
           alignItems="center"
           gap={4}
           width="full"
+          py={4}
         >
           <OptimizedImage
             src={profilePic}
