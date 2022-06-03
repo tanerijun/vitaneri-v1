@@ -39,11 +39,11 @@ const Home: NextPage = () => {
       <Box height="100vh" width="100vw">
         <VStack
           position="absolute"
-          top="45%"
+          top="40%"
           left="10%"
           alignItems="flex-start"
           spacing={4}
-          p={8}
+          p={12}
           borderRadius="lg"
           divider={<Divider />}
           bg="whiteAlpha.100"

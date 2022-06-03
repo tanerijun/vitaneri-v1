@@ -1,4 +1,4 @@
-import { Icon, Link } from '@chakra-ui/react';
+import { Icon, Link, Tooltip } from '@chakra-ui/react';
 import { IconType } from 'react-icons/lib';
 
 interface LinkIconProp {
@@ -15,21 +15,23 @@ const LinkIcon = ({ href, icon, name }: LinkIconProp) => {
   // the icon should act as a button that open a modal/drawer to more info about me
 
   return (
-    <Link
-      href={href}
-      target="_blank"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Icon
-        as={icon}
-        h={{ base: 5, lg: 6 }}
-        w={{ base: 5, lg: 6 }}
-        opacity={0.7}
-        _hover={{ opacity: 1 }}
-      />
-    </Link>
+    <Tooltip label={name} fontSize="sm" bg="transparent" color="gray.200">
+      <Link
+        href={href}
+        target="_blank"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Icon
+          as={icon}
+          h={{ base: 5, lg: 6 }}
+          w={{ base: 5, lg: 6 }}
+          opacity={0.7}
+          _hover={{ opacity: 1 }}
+        />
+      </Link>
+    </Tooltip>
   );
 };
 
