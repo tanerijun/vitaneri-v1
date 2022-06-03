@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   Box,
   Button,
@@ -76,6 +76,10 @@ const AboutMeIcon = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    btnRef?.current?.focus();
+  });
 
   return (
     <>
