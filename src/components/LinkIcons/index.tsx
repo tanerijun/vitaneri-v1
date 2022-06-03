@@ -53,8 +53,8 @@ const EmailIcon = () => {
           </PopoverTrigger>
         </Box>
       </Tooltip>
-      <PopoverContent bg="blackAlpha.100">
-        <PopoverArrow bg="blackAlpha.100" />
+      <PopoverContent bg="blackAlpha.50">
+        <PopoverArrow bg="blackAlpha.50" />
         <PopoverCloseButton />
         <PopoverHeader>Contact Me</PopoverHeader>
         <PopoverBody display="flex" gap={2}>
