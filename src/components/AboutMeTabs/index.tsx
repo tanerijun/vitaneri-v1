@@ -19,7 +19,6 @@ import {
   ListItem,
   VStack,
   Flex,
-  Center,
 } from '@chakra-ui/react';
 import OptimizedImage from '../OptimizedImage';
 import profilePic from '../../../public/portrait.jpg';
@@ -31,7 +30,13 @@ const AboutTab = () => {
         <Heading as="h3" size="lg">
           Introduction
         </Heading>
-        <Box>
+        <Flex
+          flexDirection={['column', 'row']}
+          justifyContent="space-between"
+          alignItems="center"
+          gap={4}
+          width="full"
+        >
           <OptimizedImage
             src={profilePic}
             alt="Picture of Vincent"
@@ -39,7 +44,18 @@ const AboutTab = () => {
             width={200}
             height={200}
           />
-        </Box>
+          <Text
+            as="i"
+            fontFamily="Merriweather"
+            fontSize="sm"
+            color="gray.300"
+            alignSelf="center"
+            flex={1}
+            textAlign="center"
+          >
+            - Build - Break - Learn -
+          </Text>
+        </Flex>
         <Text>
           Hi, my name is Vincent. I'm currently a student at{' '}
           <Link href="https://www.lhu.edu.tw/" isExternal>
