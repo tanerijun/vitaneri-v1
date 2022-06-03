@@ -1,5 +1,6 @@
 import { Icon, Link } from '@chakra-ui/react';
 import { IconType } from 'react-icons/lib';
+import { RiBluetoothConnectFill } from 'react-icons/ri';
 
 interface LinkIconProp {
   href: string;
@@ -21,7 +22,13 @@ const LinkIcon = ({ href, icon }: LinkIconProp) => {
       alignItems="center"
       justifyContent="center"
     >
-      <Icon as={icon} h={{ base: 5, lg: 6 }} w={{ base: 5, lg: 6 }} />
+      <Icon
+        as={icon}
+        h={{ base: 5, lg: 6 }}
+        w={{ base: 5, lg: 6 }}
+        opacity={0.7}
+        _hover={{ opacity: 1 }}
+      />
     </Link>
   );
 };
