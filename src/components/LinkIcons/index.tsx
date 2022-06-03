@@ -109,7 +109,8 @@ const AboutMeIcon = () => {
           </DrawerBody>
           <DrawerFooter display="flex" justifyContent="space-between">
             <Text fontSize="sm" color="gray.300">
-              &copy; 2022 Vincent Taneri. All Rights Reserved
+              &copy; {new Date().getFullYear()} Vincent Taneri. All Rights
+              Reserved
             </Text>
             <Button onClick={onClose}>Close</Button>
           </DrawerFooter>
