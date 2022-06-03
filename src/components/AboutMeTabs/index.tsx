@@ -74,6 +74,12 @@ const AboutTab = () => {
           me a newfound appreciation for the field. It gives me the final push
           to make software development my career.
         </Text>
+        <Text>
+          Nowadays, I'm mostly focused on web development. I'm in love with the
+          fast-paced world of web development. It's constantly evolving and
+          changing. There's never a shortage of stuff to learn. And lifelong
+          learner is what I am.
+        </Text>
       </VStack>
       <Box>
         <Heading as="h3" size="lg">
