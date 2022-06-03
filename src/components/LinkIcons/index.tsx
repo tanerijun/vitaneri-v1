@@ -146,7 +146,7 @@ const LinkIcons = () => {
       <Tooltip label="LinkedIn" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
-          href="https://www.linkedin.com/in/vincent-taneri-12bb92240"
+          href="https://www.linkedin.com/in/vincent-taneri"
           target="_blank"
           aria-label="LinkedIn Profile"
           icon={<RiLinkedinBoxFill />}
