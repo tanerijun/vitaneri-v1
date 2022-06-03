@@ -135,7 +135,7 @@ const LinkIcons = () => {
       <Tooltip label="Github" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
-          href="#"
+          href="https://github.com/tanerijun"
           target="_blank"
           aria-label="Github Profile"
           icon={<RiGithubFill />}
@@ -146,7 +146,7 @@ const LinkIcons = () => {
       <Tooltip label="LinkedIn" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
-          href="#"
+          href="https://www.linkedin.com/in/vincent-taneri-12bb92240"
           target="_blank"
           aria-label="LinkedIn Profile"
           icon={<RiLinkedinBoxFill />}
@@ -157,7 +157,7 @@ const LinkIcons = () => {
       <Tooltip label="Facebook" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
-          href="#"
+          href="https://www.facebook.com/VinceTaneri/"
           target="_blank"
           aria-label="Facebook Profile"
           icon={<RiFacebookCircleFill />}
@@ -168,7 +168,7 @@ const LinkIcons = () => {
       <Tooltip label="Twitter" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
-          href="#"
+          href="https://twitter.com/tanerivince"
           target="_blank"
           aria-label="Twitter Profile"
           icon={<RiTwitterFill />}
