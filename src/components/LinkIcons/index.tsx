@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Box,
   Button,
@@ -74,10 +74,14 @@ const EmailIcon = () => {
 const AboutMeIcon = () => {
   // This Icon should display a modal/drawer with more info about me
 
+  const [isLoading, setIsLoading] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
     btnRef?.current?.focus();
   });
 
@@ -91,6 +95,7 @@ const AboutMeIcon = () => {
           variant="ghost"
           size="sm"
           onClick={onOpen}
+          isLoading={isLoading}
         />
       </Tooltip>
       <Drawer
