@@ -61,7 +61,7 @@ const AboutTab = () => {
           <Link href="https://www.lhu.edu.tw/" isExternal>
             LongHua University of Science and Technology
           </Link>
-          , Taiwan, pursuing a B.S in Electronic Engineering.
+          , Taiwan, pursuing a B.E in Electronic Engineering.
         </Text>
         <Text>
           I started playing with computers when I was 15 years old. Since then,
