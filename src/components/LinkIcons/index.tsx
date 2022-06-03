@@ -19,11 +19,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
   useClipboard,
   useDisclosure,
 } from '@chakra-ui/react';
@@ -35,6 +30,7 @@ import {
   RiMailFill,
   RiMoreFill,
 } from 'react-icons/ri';
+import AboutMeTabs from '../AboutMeTabs';
 
 const EmailIcon = () => {
   // This Icon display a popover giving user a choice whether to send an email using mailto or copy email address to clipboard
@@ -108,10 +104,7 @@ const AboutMeIcon = () => {
           <DrawerCloseButton />
           <DrawerHeader>About Me</DrawerHeader>
           <DrawerBody>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi
-            hic doloremque laudantium veritatis, dolorum maiores tempora
-            adipisci, saepe aliquam eius quos tempore voluptate, voluptas non
-            officiis aspernatur excepturi officia.
+            <AboutMeTabs />
           </DrawerBody>
           <DrawerFooter>
             <Button onClick={onClose}>Close</Button>
@@ -120,10 +113,6 @@ const AboutMeIcon = () => {
       </Drawer>
     </>
   );
-};
-
-const AboutMeDetails = () => {
-  return <Box>Hello</Box>;
 };
 
 const LinkIcons = () => {
