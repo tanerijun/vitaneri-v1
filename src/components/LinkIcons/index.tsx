@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import {
   Box,
   Button,
@@ -11,7 +12,20 @@ import {
   PopoverCloseButton,
   PopoverHeader,
   PopoverBody,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
   useClipboard,
+  useDisclosure,
 } from '@chakra-ui/react';
 import {
   RiGithubFill,
@@ -58,6 +72,58 @@ const EmailIcon = () => {
       </PopoverContent>
     </Popover>
   );
+};
+
+const AboutMeIcon = () => {
+  // This Icon should display a modal/drawer with more info about me
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef<HTMLButtonElement>(null);
+
+  return (
+    <>
+      <Tooltip label="About Me" fontSize="sm" bg="transparent" color="gray.200">
+        <IconButton
+          ref={btnRef}
+          aria-label="About Me"
+          icon={<RiMoreFill />}
+          variant="ghost"
+          size="sm"
+          onClick={onOpen}
+        />
+      </Tooltip>
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+        size={['full', 'full', 'xl']}
+      >
+        <DrawerOverlay />
+        <DrawerContent
+          bg="whiteAlpha.100"
+          className="glassmorphism"
+          borderTop="none"
+        >
+          <DrawerCloseButton />
+          <DrawerHeader>About Me</DrawerHeader>
+          <DrawerBody>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eligendi
+            hic doloremque laudantium veritatis, dolorum maiores tempora
+            adipisci, saepe aliquam eius quos tempore voluptate, voluptas non
+            officiis aspernatur excepturi officia.
+          </DrawerBody>
+          <DrawerFooter>
+            <Button onClick={onClose}>Close</Button>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </>
+  );
+};
+
+const AboutMeDetails = () => {
+  return <Box>Hello</Box>;
 };
 
 const LinkIcons = () => {
@@ -108,17 +174,7 @@ const LinkIcons = () => {
         />
       </Tooltip>
       <EmailIcon />
-      <Tooltip label="About Me" fontSize="sm" bg="transparent" color="gray.200">
-        <IconButton
-          as="a"
-          href="#"
-          target="_blank"
-          aria-label="About Me"
-          icon={<RiMoreFill />}
-          variant="ghost"
-          size="sm"
-        />
-      </Tooltip>
+      <AboutMeIcon />
     </HStack>
   );
 };
