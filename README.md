@@ -1,5 +1,8 @@
 TODO:
 
-1. Make the glass tiltable
+1. Project Tab
+2. Blog Tab
+3. Favicon
+4. Logo
 
-Domain name idea: vitaneri.com vaneri.com taneri.com vincenttaneri.com
+Domain name idea: vitaneri.com
