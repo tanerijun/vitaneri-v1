@@ -23,13 +23,7 @@ const LinkIcon = ({ href, icon, name }: LinkIconProp) => {
         alignItems="center"
         justifyContent="center"
       >
-        <Icon
-          as={icon}
-          h={{ base: 5, lg: 6 }}
-          w={{ base: 5, lg: 6 }}
-          opacity={0.7}
-          _hover={{ opacity: 1 }}
-        />
+        <Icon as={icon} h={5} w={5} opacity={0.7} _hover={{ opacity: 1 }} />
       </Link>
     </Tooltip>
   );

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import {
   Box,
+  Center,
   Divider,
   Heading,
   HStack,
@@ -36,11 +37,10 @@ const Home: NextPage = () => {
 
       <ParticlesBackground />
 
-      <Box height="100vh" width="100vw">
+      <Center height="100vh" width="100vw">
         <VStack
           position="absolute"
-          top="40%"
-          left="10%"
+          left={[null, null, '10%']}
           alignItems="flex-start"
           spacing={4}
           p={12}
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
         >
           <VStack alignItems="flex-start">
             <Heading
-              size="2xl"
+              size="xl"
               fontFamily="Merriweather"
               fontWeight="light"
               letterSpacing="1px"
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             <LinkIcon href="#" icon={RiMoreFill} name="About Me" />
           </HStack>
         </VStack>
-      </Box>
+      </Center>
     </>
   );
 };
