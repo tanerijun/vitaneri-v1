@@ -4,6 +4,7 @@ import {
   Button,
   IconButton,
   HStack,
+  Text,
   Tooltip,
   Popover,
   PopoverTrigger,
@@ -106,8 +107,10 @@ const AboutMeIcon = () => {
           <DrawerBody>
             <AboutMeTabs />
           </DrawerBody>
-          <DrawerFooter>
-            // Add copyright
+          <DrawerFooter display="flex" justifyContent="space-between">
+            <Text fontSize="sm" color="gray.300">
+              &copy; 2022 Vincent Taneri. All Rights Reserved
+            </Text>
             <Button onClick={onClose}>Close</Button>
           </DrawerFooter>
         </DrawerContent>
