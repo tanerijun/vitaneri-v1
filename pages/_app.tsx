@@ -10,8 +10,8 @@ import theme from '../src/theme';
 
 const GlobalStyles = css`
   .glassmorphism {
-    -webkit-backdrop-filter: blur(8px) saturate(125%); // Support for webkit
-    backdrop-filter: blur(8px) saturate(125%);
+    -webkit-backdrop-filter: blur(5px) saturate(125%); // Support for webkit
+    backdrop-filter: blur(5px) saturate(125%);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
   }

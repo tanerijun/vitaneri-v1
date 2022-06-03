@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           p={12}
           borderRadius="lg"
           divider={<Divider />}
-          bg="whiteAlpha.100"
+          bg="whiteAlpha.50"
           boxShadow="md"
           className="glassmorphism"
         >

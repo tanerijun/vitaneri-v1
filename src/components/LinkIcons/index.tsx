@@ -97,7 +97,7 @@ const AboutMeIcon = () => {
       >
         <DrawerOverlay />
         <DrawerContent
-          bg="whiteAlpha.100"
+          bg="whiteAlpha.50"
           className="glassmorphism"
           borderTop="none"
         >
@@ -107,6 +107,7 @@ const AboutMeIcon = () => {
             <AboutMeTabs />
           </DrawerBody>
           <DrawerFooter>
+            // Add copyright
             <Button onClick={onClose}>Close</Button>
           </DrawerFooter>
         </DrawerContent>
