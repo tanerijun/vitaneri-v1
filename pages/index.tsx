@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { Center, Divider, Heading, Text, VStack } from '@chakra-ui/react';
 import ParticlesBackground from '../src/components/ParticlesBackground';
 import LinkIcons from '../src/components/LinkIcons';
-import InitialLoadingIndicator from '../src/components/InitialLoadingIndicator';
 
 const Home: NextPage = () => {
   return (
