@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Center, Divider, Heading, Text, VStack } from '@chakra-ui/react';
 import ParticlesBackground from '../src/components/ParticlesBackground';
 import LinkIcons from '../src/components/LinkIcons';
+import InitialLoadingIndicator from '../src/components/InitialLoadingIndicator';
 
 const Home: NextPage = () => {
   return (
@@ -16,12 +17,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <InitialLoadingIndicator />
+
       <Center height="100vh" width="100vw">
         <VStack
           position="absolute"
           left={[null, null, '10%']}
           alignItems="flex-start"
-          w={[300, 350]}
+          w={[300, 345]}
           spacing={4}
           p={8}
           borderRadius="md"
