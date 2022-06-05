@@ -32,7 +32,7 @@ const Home: NextPage = () => {
       <Center
         height="100vh"
         width="100vw"
-        animation={`${backgroundAnimation} 5s ease-in`}
+        animation={`${backgroundAnimation} 4s ease-in`}
       >
         <VStack
           position="absolute"
