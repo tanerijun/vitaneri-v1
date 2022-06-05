@@ -21,7 +21,6 @@ const Home: NextPage = () => {
           position="absolute"
           left={[null, null, '10%']}
           alignItems="flex-start"
-          w={[300, 345]}
           spacing={4}
           p={8}
           borderRadius="md"
@@ -30,7 +29,7 @@ const Home: NextPage = () => {
           boxShadow="md"
           className="glassmorphism"
         >
-          <VStack alignItems="flex-start">
+          <VStack alignItems="flex-start" width="100%">
             <Heading
               size="xl"
               fontFamily="Merriweather"
