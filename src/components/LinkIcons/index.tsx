@@ -29,7 +29,7 @@ import {
   RiTwitterFill,
   RiLinkedinBoxFill,
   RiMailFill,
-  RiMoreFill,
+  RiUserSmileFill,
 } from 'react-icons/ri';
 import AboutMeTabs from '../AboutMeTabs';
 
@@ -91,7 +91,7 @@ const AboutMeIcon = () => {
         <IconButton
           ref={btnRef}
           aria-label="About Me"
-          icon={<RiMoreFill />}
+          icon={<RiUserSmileFill />}
           variant="ghost"
           size="sm"
           onClick={onOpen}
