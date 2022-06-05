@@ -107,7 +107,7 @@ const AboutMeIcon = () => {
       >
         {/* <DrawerOverlay /> */}
         <DrawerContent
-          bg="whiteAlpha.50"
+          bg="blackAlpha.50"
           className="glassmorphism"
           borderTop="none"
         >
