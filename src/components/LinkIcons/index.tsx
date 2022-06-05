@@ -116,12 +116,12 @@ const AboutMeIcon = () => {
           <DrawerBody>
             <AboutMeTabs />
           </DrawerBody>
-          <DrawerFooter display="flex" justifyContent="space-between">
+          <DrawerFooter display="flex" justifyContent="center">
             <Text fontSize="sm" color="gray.300">
               &copy; {new Date().getFullYear()} Vincent Taneri. All Rights
               Reserved
             </Text>
-            <Button onClick={onClose}>Close</Button>
+            {/* <Button onClick={onClose}>Close</Button> */}
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
