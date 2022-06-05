@@ -16,8 +16,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ParticlesBackground />
-
       <Center height="100vh" width="100vw">
         <VStack
           position="absolute"
@@ -47,6 +45,8 @@ const Home: NextPage = () => {
           <LinkIcons />
         </VStack>
       </Center>
+
+      <ParticlesBackground />
     </>
   );
 };
