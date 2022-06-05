@@ -1,6 +1,6 @@
-import '@fontsource/inter';
-import '@fontsource/merriweather';
-import '@fontsource/source-sans-pro';
+import '@fontsource/inter/400.css';
+import '@fontsource/merriweather/400.css';
+import '@fontsource/source-sans-pro/400.css';
 
 import type { AppProps } from 'next/app';
 

@@ -13,8 +13,8 @@ import LinkIcons from '../src/components/LinkIcons';
 
 // animate from black to transparent
 const backgroundAnimation = keyframes`
-  from {background-color: #000000FF;}
-  to {background-color: #00000000;}
+  from {background-color: #000000;}
+  to {background-color: transparent;}
 `;
 
 const Home: NextPage = () => {
