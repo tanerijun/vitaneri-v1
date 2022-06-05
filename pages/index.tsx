@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Center height="100vh" width="100vw">
+      <Center height="100vh" width="100vw" bg="black">
         <VStack
           position="absolute"
           left={[null, null, '10%']}
