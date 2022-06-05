@@ -17,8 +17,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <InitialLoadingIndicator />
-
       <Center height="100vh" width="100vw">
         <VStack
           position="absolute"
