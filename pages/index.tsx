@@ -21,8 +21,9 @@ const Home: NextPage = () => {
           position="absolute"
           left={[null, null, '10%']}
           alignItems="flex-start"
+          w={[300, 350]}
           spacing={4}
-          p={12}
+          p={8}
           borderRadius="md"
           divider={<Divider />}
           bg="blackAlpha.50"

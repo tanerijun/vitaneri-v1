@@ -93,11 +93,11 @@ export const bouncySnow: ISourceOptions = {
 };
 
 export const colorShow: any = {
-  // background: {
-  //   color: {
-  //     value: '#000000',
-  //   },
-  // },
+  background: {
+    color: {
+      value: '#000000',
+    },
+  },
   fullScreen: {
     zIndex: -1,
   },
