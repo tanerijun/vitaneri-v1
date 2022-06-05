@@ -59,11 +59,11 @@ const EmailIcon = () => {
         <PopoverCloseButton />
         <PopoverHeader>Contact Me</PopoverHeader>
         <PopoverBody display="flex" gap={2}>
-          <Button as="a" href={`mailto:${email}`} target="_blank" flex="1">
+          <Button as="a" href={`mailto:${email}`} target="_blank" size="sm">
             Send Email
           </Button>
-          <Button flex="1" onClick={onCopy}>
-            {hasCopied ? 'Email Copied' : 'Copy Email'}
+          <Button size="sm" flex="1" onClick={onCopy}>
+            {hasCopied ? 'Copied To Clipboard' : 'Copy Email Address'}
           </Button>
         </PopoverBody>
       </PopoverContent>
