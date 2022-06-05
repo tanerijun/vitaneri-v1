@@ -17,7 +17,7 @@ import {
   DrawerBody,
   DrawerFooter,
   DrawerHeader,
-  DrawerOverlay,
+  // DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   useClipboard,
@@ -105,7 +105,7 @@ const AboutMeIcon = () => {
         finalFocusRef={btnRef}
         size={['full', 'full', 'xl']}
       >
-        <DrawerOverlay />
+        {/* <DrawerOverlay /> */}
         <DrawerContent
           bg="whiteAlpha.50"
           className="glassmorphism"
