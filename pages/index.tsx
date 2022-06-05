@@ -1,8 +1,21 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Center, Divider, Heading, Text, VStack } from '@chakra-ui/react';
+import {
+  Center,
+  Divider,
+  Heading,
+  Text,
+  VStack,
+  keyframes,
+} from '@chakra-ui/react';
 import ParticlesBackground from '../src/components/ParticlesBackground';
 import LinkIcons from '../src/components/LinkIcons';
+
+// animate from black to transparent
+const backgroundAnimation = keyframes`
+  from {background-color: #000000FF;}
+  to {background-color: #00000000;}
+`;
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +29,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Center height="100vh" width="100vw" bg="black">
+      <Center
+        height="100vh"
+        width="100vw"
+        animation={`${backgroundAnimation} 5s ease-in`}
+      >
         <VStack
           position="absolute"
           left={[null, null, '10%']}
