@@ -25,9 +25,9 @@ const Home: NextPage = () => {
           alignItems="flex-start"
           spacing={4}
           p={12}
-          borderRadius="lg"
+          borderRadius="md"
           divider={<Divider />}
-          bg="whiteAlpha.50"
+          bg="blackAlpha.50"
           boxShadow="md"
           className="glassmorphism"
         >
