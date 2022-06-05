@@ -44,9 +44,8 @@ const Home: NextPage = () => {
           </VStack>
           <LinkIcons />
         </VStack>
+        <ParticlesBackground />
       </Center>
-
-      <ParticlesBackground />
     </>
   );
 };
