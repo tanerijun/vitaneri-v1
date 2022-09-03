@@ -19,9 +19,9 @@ import {
   ListItem,
   VStack,
   Flex,
-} from '@chakra-ui/react';
-import OptimizedImage from '../OptimizedImage';
-import profilePic from '../../../public/portrait.jpg';
+} from "@chakra-ui/react";
+import OptimizedImage from "../OptimizedImage";
+import profilePic from "../../../public/portrait.jpg";
 
 const AboutTab = () => {
   return (
@@ -31,7 +31,7 @@ const AboutTab = () => {
           Introduction
         </Heading>
         <Flex
-          flexDirection={['column', 'row']}
+          flexDirection={["column", "row"]}
           justifyContent="space-between"
           alignItems="center"
           gap={4}
@@ -58,7 +58,7 @@ const AboutTab = () => {
           </Text>
         </Flex>
         <Text>
-          Hi, my name is Vincent. I&apos;m currently a student at{' '}
+          Hi, my name is Vincent. I&apos;m currently a student at{" "}
           <Link href="https://www.lhu.edu.tw/" isExternal>
             LongHua University of Science and Technology
           </Link>
@@ -216,17 +216,11 @@ const AboutMeTabs = () => {
       <TabList>
         <Tab>About</Tab>
         <Tab>Project</Tab>
-        <Tab>Blog</Tab>
       </TabList>
 
       <TabPanels>
         <TabPanel>
           <AboutTab />
-        </TabPanel>
-        <TabPanel>
-          <Flex alignItems="center" justifyContent="center">
-            Coming Soon
-          </Flex>
         </TabPanel>
         <TabPanel>
           <Flex alignItems="center" justifyContent="center">
