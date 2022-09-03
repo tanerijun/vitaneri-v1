@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import {
   Box,
   Button,
@@ -22,22 +22,22 @@ import {
   DrawerCloseButton,
   useClipboard,
   useDisclosure,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 import {
   RiGithubFill,
-  RiFacebookCircleFill,
   RiTwitterFill,
   RiLinkedinBoxFill,
   RiMailFill,
+  RiQuillPenFill,
   RiUserSmileFill,
-} from 'react-icons/ri';
-import AboutMeTabs from '../AboutMeTabs';
+} from "react-icons/ri";
+import AboutMeTabs from "../AboutMeTabs";
 
 const EmailIcon = () => {
   // This Icon display a popover giving user a choice whether to send an email using mailto or copy email address to clipboard
 
   // Used to copy email to clipboard
-  const email = 'tanerivince@gmail.com';
+  const email = "tanerivince@gmail.com";
   const { hasCopied, onCopy } = useClipboard(email);
 
   return (
@@ -63,7 +63,7 @@ const EmailIcon = () => {
             Send Email
           </Button>
           <Button size="sm" flex="1" onClick={onCopy}>
-            {hasCopied ? 'Copied To Clipboard' : 'Copy Email Address'}
+            {hasCopied ? "Copied To Clipboard" : "Copy Email Address"}
           </Button>
         </PopoverBody>
       </PopoverContent>
@@ -103,7 +103,7 @@ const AboutMeIcon = () => {
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
-        size={['full', 'full', 'xl']}
+        size={["full", "full", "xl"]}
       >
         <DrawerOverlay />
         <DrawerContent
@@ -143,6 +143,17 @@ const LinkIcons = () => {
           size="sm"
         />
       </Tooltip>
+      <Tooltip label="Twitter" fontSize="sm" bg="transparent" color="gray.200">
+        <IconButton
+          as="a"
+          href="https://twitter.com/tanerivince"
+          target="_blank"
+          aria-label="Twitter Profile"
+          icon={<RiTwitterFill />}
+          variant="ghost"
+          size="sm"
+        />
+      </Tooltip>
       <Tooltip label="LinkedIn" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
@@ -154,24 +165,13 @@ const LinkIcons = () => {
           size="sm"
         />
       </Tooltip>
-      <Tooltip label="Facebook" fontSize="sm" bg="transparent" color="gray.200">
+      <Tooltip label="Blog" fontSize="sm" bg="transparent" color="gray.200">
         <IconButton
           as="a"
-          href="https://www.facebook.com/VinceTaneri/"
+          href="https://blog.vitaneri.com"
           target="_blank"
-          aria-label="Facebook Profile"
-          icon={<RiFacebookCircleFill />}
-          variant="ghost"
-          size="sm"
-        />
-      </Tooltip>
-      <Tooltip label="Twitter" fontSize="sm" bg="transparent" color="gray.200">
-        <IconButton
-          as="a"
-          href="https://twitter.com/tanerivince"
-          target="_blank"
-          aria-label="Twitter Profile"
-          icon={<RiTwitterFill />}
+          aria-label="Personal Blog"
+          icon={<RiQuillPenFill />}
           variant="ghost"
           size="sm"
         />
