@@ -65,7 +65,7 @@ const AboutTab = () => {
           , Taiwan, pursuing a B.E in Electronic Engineering.
         </Text>
         <Text>
-          I started playing with computers when I was 15 years old. Since then,
+          I started playing with computers when I was 12 years old. Since then,
           I&apos;ve been tinkering with all sorts of technologies, and it
           didn&apos;t take long before I fell in love with the world of coding.
         </Text>
@@ -79,7 +79,7 @@ const AboutTab = () => {
           Nowadays, I&apos;m mostly focused on web development. I&apos;m in love
           with the fast-paced world of web development. It&apos;s constantly
           evolving and changing. There&apos;s never a shortage of stuff to
-          learn. And lifelong learner is what I am.
+          learn. And lifelong learner is what I strive to be.
         </Text>
       </VStack>
       <Box>
@@ -87,7 +87,7 @@ const AboutTab = () => {
           Likes
         </Heading>
         <UnorderedList>
-          <ListItem>Tinkering Stuffs</ListItem>
+          <ListItem>Tinkering electronics</ListItem>
           <ListItem>Reading (Non-fiction, Fiction, Manga)</ListItem>
           <ListItem>Playing Video Games</ListItem>
           <ListItem>Watching Movies</ListItem>
@@ -134,16 +134,16 @@ const AboutTab = () => {
                 <Td>Python</Td>
               </Tr>
               <Tr>
-                <Td>Javascript</Td>
+                <Td>Java</Td>
               </Tr>
               <Tr>
-                <Td>Typescript</Td>
+                <Td>JavaScript</Td>
               </Tr>
               <Tr>
-                <Td>Go</Td>
+                <Td>TypeScript</Td>
               </Tr>
               <Tr>
-                <Td rowSpan={9}>Frontend</Td>
+                <Td rowSpan={10}>Frontend</Td>
                 <Td>HTML</Td>
               </Tr>
               <Tr>
@@ -151,6 +151,9 @@ const AboutTab = () => {
               </Tr>
               <Tr>
                 <Td>TailwindCSS</Td>
+              </Tr>
+              <Tr>
+                <Td>Styled Component</Td>
               </Tr>
               <Tr>
                 <Td>ChakraUI</Td>
@@ -171,17 +174,23 @@ const AboutTab = () => {
                 <Td>...</Td>
               </Tr>
               <Tr>
-                <Td rowSpan={6}>Backend</Td>
-                <Td>NodeJS</Td>
+                <Td rowSpan={8}>Backend</Td>
+                <Td>NodeJS / Express</Td>
               </Tr>
               <Tr>
-                <Td>Express</Td>
+                <Td>J2EE</Td>
+              </Tr>
+              <Tr>
+                <Td>Spring / Spring Boot</Td>
               </Tr>
               <Tr>
                 <Td>MongoDB</Td>
               </Tr>
               <Tr>
                 <Td>MySQL</Td>
+              </Tr>
+              <Tr>
+                <Td>PostgreSQL</Td>
               </Tr>
               <Tr>
                 <Td>Firebase</Td>
