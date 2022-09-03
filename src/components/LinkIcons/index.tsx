@@ -129,54 +129,77 @@ const AboutMeIcon = () => {
   );
 };
 
+const GithubIcon = () => {
+  return (
+    <Tooltip label="Github" fontSize="sm" bg="transparent" color="gray.200">
+      <IconButton
+        as="a"
+        href="https://github.com/tanerijun"
+        target="_blank"
+        aria-label="Github Profile"
+        icon={<RiGithubFill />}
+        variant="ghost"
+        size="sm"
+      />
+    </Tooltip>
+  );
+};
+
+const TwitterIcon = () => {
+  return (
+    <Tooltip label="Twitter" fontSize="sm" bg="transparent" color="gray.200">
+      <IconButton
+        as="a"
+        href="https://twitter.com/tanerivince"
+        target="_blank"
+        aria-label="Twitter Profile"
+        icon={<RiTwitterFill />}
+        variant="ghost"
+        size="sm"
+      />
+    </Tooltip>
+  );
+};
+
+const LinkedInIcon = () => {
+  return (
+    <Tooltip label="LinkedIn" fontSize="sm" bg="transparent" color="gray.200">
+      <IconButton
+        as="a"
+        href="https://www.linkedin.com/in/vincent-taneri"
+        target="_blank"
+        aria-label="LinkedIn Profile"
+        icon={<RiLinkedinBoxFill />}
+        variant="ghost"
+        size="sm"
+      />
+    </Tooltip>
+  );
+};
+
+const BlogIcon = () => {
+  return (
+    <Tooltip label="Blog" fontSize="sm" bg="transparent" color="gray.200">
+      <IconButton
+        as="a"
+        href="https://blog.vitaneri.com"
+        target="_blank"
+        aria-label="Personal Blog"
+        icon={<RiQuillPenFill />}
+        variant="ghost"
+        size="sm"
+      />
+    </Tooltip>
+  );
+};
 const LinkIcons = () => {
   return (
     <HStack>
-      <Tooltip label="Github" fontSize="sm" bg="transparent" color="gray.200">
-        <IconButton
-          as="a"
-          href="https://github.com/tanerijun"
-          target="_blank"
-          aria-label="Github Profile"
-          icon={<RiGithubFill />}
-          variant="ghost"
-          size="sm"
-        />
-      </Tooltip>
-      <Tooltip label="Twitter" fontSize="sm" bg="transparent" color="gray.200">
-        <IconButton
-          as="a"
-          href="https://twitter.com/tanerivince"
-          target="_blank"
-          aria-label="Twitter Profile"
-          icon={<RiTwitterFill />}
-          variant="ghost"
-          size="sm"
-        />
-      </Tooltip>
-      <Tooltip label="LinkedIn" fontSize="sm" bg="transparent" color="gray.200">
-        <IconButton
-          as="a"
-          href="https://www.linkedin.com/in/vincent-taneri"
-          target="_blank"
-          aria-label="LinkedIn Profile"
-          icon={<RiLinkedinBoxFill />}
-          variant="ghost"
-          size="sm"
-        />
-      </Tooltip>
-      <Tooltip label="Blog" fontSize="sm" bg="transparent" color="gray.200">
-        <IconButton
-          as="a"
-          href="https://blog.vitaneri.com"
-          target="_blank"
-          aria-label="Personal Blog"
-          icon={<RiQuillPenFill />}
-          variant="ghost"
-          size="sm"
-        />
-      </Tooltip>
+      <GithubIcon />
+      <TwitterIcon />
+      <LinkedInIcon />
       <EmailIcon />
+      <BlogIcon />
       <AboutMeIcon />
     </HStack>
   );
