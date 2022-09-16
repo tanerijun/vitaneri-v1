@@ -1,5 +1,6 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from "next";
+import Head from "next/head";
+import { useEffect } from "react";
 import {
   Center,
   Divider,
@@ -7,9 +8,9 @@ import {
   Text,
   VStack,
   keyframes,
-} from '@chakra-ui/react';
-import ParticlesBackground from '../src/components/ParticlesBackground';
-import LinkIcons from '../src/components/LinkIcons';
+} from "@chakra-ui/react";
+import ParticlesBackground from "../src/components/ParticlesBackground";
+import LinkIcons from "../src/components/LinkIcons";
 
 // animate from black to transparent
 const backgroundAnimation = keyframes`
@@ -17,7 +18,16 @@ const backgroundAnimation = keyframes`
   to {background-color: transparent;}
 `;
 
+// Easter egg for visitors that check the console
+const easterEgg = `
+≧◠ᴥ◠≦✊ Fighto!
+`;
+
 const Home: NextPage = () => {
+  useEffect(() => {
+    console.log(easterEgg);
+  }, []);
+
   return (
     <>
       <Head>
@@ -36,7 +46,7 @@ const Home: NextPage = () => {
       >
         <VStack
           position="absolute"
-          left={[null, null, '10%']}
+          left={[null, null, "10%"]}
           alignItems="flex-start"
           spacing={4}
           p={8}
