@@ -20,7 +20,11 @@ const backgroundAnimation = keyframes`
 
 // Easter egg for visitors that check the console
 const easterEgg = `
-≧◠ᴥ◠≦✊ Fighto!
+  /\\_/\\  (
+ ( ^.^ ) _)
+   \\"/  (
+ ( | | )
+(__d b__) Have a good day!
 `;
 
 const Home: NextPage = () => {
