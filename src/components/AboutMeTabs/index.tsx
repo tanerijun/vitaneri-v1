@@ -143,7 +143,7 @@ const AboutTab = () => {
                 <Td>TypeScript</Td>
               </Tr>
               <Tr>
-                <Td rowSpan={10}>Frontend</Td>
+                <Td rowSpan={11}>Frontend</Td>
                 <Td>HTML</Td>
               </Tr>
               <Tr>
@@ -157,6 +157,9 @@ const AboutTab = () => {
               </Tr>
               <Tr>
                 <Td>ChakraUI</Td>
+              </Tr>
+              <Tr>
+                <Td>JQuery</Td>
               </Tr>
               <Tr>
                 <Td>React</Td>
