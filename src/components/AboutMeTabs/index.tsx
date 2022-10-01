@@ -66,21 +66,16 @@ const AboutTab = () => {
           , Taiwan, pursuing a B.E in Electronic Engineering.
         </Text>
         <Text>
-          I started playing with computers when I was 12 years old. Since then,
-          I&apos;ve been tinkering with all sorts of technologies, and it
-          didn&apos;t take long before I fell in love with the world of coding.
+          From a very young age, I&apos;ve always been interested in Tech and
+          Science. Initially, I started coding out of curiosity, eventually it
+          became a hobby, and after many hobby projects, I finally decided to
+          pursue a career in software development.
         </Text>
         <Text>
-          The knowledge from my Electronic Engineering class not only enhance my
-          understanding of the working and intricacies of computer but also give
-          me a newfound appreciation for the field. It gives me the final push
-          to make software development my career.
-        </Text>
-        <Text>
-          Nowadays, I&apos;m mostly focused on web development. I&apos;m in love
-          with the fast-paced world of web development. It&apos;s constantly
-          evolving and changing. There&apos;s never a shortage of stuff to
-          learn. And lifelong learner is what I strive to be.
+          I have a passion for design and development, I like to create things
+          that don&apos;t just look good, but that also functional and
+          performant. I am always eager to take on a challenge, and aim to
+          exceed in all tasks I take on.
         </Text>
       </VStack>
       <Box>
