@@ -103,7 +103,7 @@ const AboutMeIcon = () => {
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
-        size={["full", "full", "xl"]}
+        size={["full", "full", "lg"]}
       >
         <DrawerOverlay />
         <DrawerContent

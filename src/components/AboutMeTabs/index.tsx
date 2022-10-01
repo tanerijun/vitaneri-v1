@@ -44,6 +44,7 @@ const AboutTab = () => {
             borderRadius="full"
             width={200}
             height={200}
+            priority
           />
           <Text
             as="i"
@@ -83,7 +84,7 @@ const AboutTab = () => {
         </Text>
       </VStack>
       <Box>
-        <Heading as="h3" size="lg">
+        <Heading as="h3" size="lg" my={4}>
           Likes
         </Heading>
         <UnorderedList>
@@ -96,7 +97,7 @@ const AboutTab = () => {
         </UnorderedList>
       </Box>
       <Box width="full">
-        <Heading as="h3" size="lg">
+        <Heading as="h3" size="lg" my={4}>
           Languages
         </Heading>
         <TableContainer>
@@ -123,7 +124,7 @@ const AboutTab = () => {
         </TableContainer>
       </Box>
       <Box width="full">
-        <Heading as="h3" size="lg">
+        <Heading as="h3" size="lg" my={4}>
           Skills
         </Heading>
         <TableContainer>
@@ -206,7 +207,7 @@ const AboutTab = () => {
         </TableContainer>
       </Box>
       <Box>
-        <Heading as="h3" size="lg">
+        <Heading as="h3" size="lg" my={4}>
           Aspiration
         </Heading>
         <Text>
@@ -227,7 +228,7 @@ const AboutMeTabs = () => {
     <Tabs isFitted variant="line">
       <TabList>
         <Tab>About</Tab>
-        <Tab>Project</Tab>
+        <Tab>Projects</Tab>
       </TabList>
 
       <TabPanels>
