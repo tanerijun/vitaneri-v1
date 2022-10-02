@@ -1,11 +1,19 @@
-TODO:
+## Vitaneri V1
 
-1. Project Tab
-   1. Project tab should be filled with cards with some info about the project
-   2. When the card is clicked, a modal with the details of the project will be opened
-   3. One of the card should be about this site, and talk about how you try to make the site different then other portfolio, and give the user the option to give a like or dislike (and possibly store this value somewhere)
-2. Blog Tab
-3. Favicon
-4. Logo
+This is my first attempt at making a portfolio website. I tried to make it as original as I can, and I'm pretty happy with how it turned out. I love just staring at the background, and enjoy the aesthetic of the site. I especially enjoy the moment when the color balls go behind the name card showing a glassmorphism effect.
 
-Domain name idea: vitaneri.com
+The website is live [here](https://vitaneri.vercel.app).
+
+### Tech Stack
+
+I used the amazing technologies below to create this site:
+
+- TypeScript
+- NextJS
+- React
+- ChakraUI
+- Framer Motion
+
+### Projects Tab
+
+It's intentionally left empty for now. I plan to fill it with my top 3 best projects when I'm about to apply for jobs.
